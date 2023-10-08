@@ -30,8 +30,8 @@ class AffiliateProgram:
         return self.referral_needed_to_be/self.sales_conversion_rate
     
     def get_touch_point_need(self):
-        return self.referral_needed_to_be/self.sales_conversion_rate
+        return self.conversations_needed/self.response_rate
 
 # Example usage:
 ap = AffiliateProgram()
-print(ap.get_touch_point_need())
+print(ap.get_payout())
